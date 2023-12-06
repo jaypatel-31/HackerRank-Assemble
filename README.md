@@ -11,7 +11,7 @@ HackerRank Assemble is a recruitment facilitation tool hosted on Streamlit Cloud
 
 ## Quick Start
 
-1. Access the platform on Streamlit Cloud: [HackerRank Assemble URL](https://code-wizard-hogwarts-hr-intern-project1-app-7ylczo.streamlit.app/)
+1. Access the platform on Streamlit Cloud: [HackerRank Assemble URL](https://code-wizard-hogwarts-hr-intern-project1-app.streamlit.app/)
  
 2. Enter Greenhouse Job ID, HackerRank Test ID, and the number of entries.
 
@@ -60,13 +60,22 @@ What things you need to install the software:
 
 4. **Set Up Environment Variables**
 
-    Copy the `.env.example` file to a new file named `.env`, and fill in your configuration settings.
+    - Create a new `.env` file in the root directory of your project:
 
-    ```bash
-    cp .env.example .env
-    ```
+        ```bash
+        touch .env
+        ```
 
-    Then, open the `.env` file and add the necessary API keys and other sensitive information.
+    - Open the `.env` file in a text editor and add your API keys and tokens:
+
+        ```plaintext
+        GREENHOUSE_API_KEY=your_greenhouse_api_key_here
+        TOKEN=your_token_here
+        ```
+
+        Replace `your_greenhouse_api_key_here` and `your_token_here` with your actual API key and token values.
+
+    **Important**: Ensure `.env` is added to your `.gitignore` file to keep these secrets out of version control.
 
 5. **Run the Application**
 
